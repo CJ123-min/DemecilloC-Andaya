@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url(Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: "Fredoka";
+  src: url(Fredoka-VariableFont_wdth,wght.ttf);
+}
+@font-face {
+  font-family: "CedarvilleCursive";
+  src: url(CedarvilleCursive-Regular.ttf);
+}
+
+/*Background*/
+body{
+  background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+
+}
+
+ html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/*navigation*/
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: light;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: light;
+  font-size: 16px;
+}
+
+.navbar img {
+  width: 40px;
+  height:40px;
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+}
+
+/*buttons*/
+.container {
+  padding-top: 100px; /* space for fixed navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Button Grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 50px;
+  user-select: none;
+}
+
+/* Icon Buttons */
+.icon-button {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-button:hover{
+  border-radius: 10px;
+  transform: scale(1.2);
+  background-color: rgb(236, 44, 153);
+}
+.icon-button:active{
+  transform: scale(1.1);
+  background-color: rgb(176, 25, 110);
+}
