@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url(Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: "Fredoka";
+  src: url(Fredoka-VariableFont_wdth,wght.ttf);
+}
+@font-face {
+  font-family: "CedarvilleCursive";
+  src: url(CedarvilleCursive-Regular.ttf);
+}
+
+/*Background*/
+body{
+  background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   background-position: center; 
+}
+
+ html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/*navigation*/
+.navbar {
+  width: 100%;
+  position: static;
+  top: 0;
+  left: 0;
+  padding: 15px 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: light;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: light;
+  font-size: 16px;
+}
+
+.navbar img {
+  width: 40px;
+  height:40px;
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+}
+
+/*section1*/
+
+.confettibox{
+display: block; 
+position: relative;
+gap: 20px; 
+flex: 1;
+width: 50%;
+margin-left: 2%;
+user-select: none;
+margin-top: 8%;
+}
+
+.sectionbox{
+display: flex;
+justify-content: space-between;
+gap: 50px;
+margin-top: 5%;
+}
+
+.textbox{
+margin-top: -1%;
+text-align: center;
+margin-left: 3%;
+text-align: justify;
+font-family: "Fredoka"; 
+user-select: none;
+}
+
+.texttitle{
+font-family: "Fredoka", sans-serif;
+display: block;
+position: relative;
+bottom: -10px;
+user-select: none;
+}
+
+.confettipic{
+margin-right: 40px;
+height: auto;
+width: 600px;
+border-radius: 5px;
+user-select: none;
+margin-top: 40px;
+}
+
+.confettiimgcase{ 
+height: 100vh;  
+width: 100%;
+ justify-content: center;
+  align-items: center;
+  display: flex;
+  user-select: none;
+}
+
+.confetii{ 
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.smokeexample{
+  margin-top: -5%;
+text-align: center;
+margin-left: 3%;
+font-family: "Fredoka"; 
+user-select: none;
+}
+
+.button2case{
+  position: relative;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  bottom: 20px;
+  overflow: visible;
+  margin-top: 50px;
+  transform: translateX(34%)
+}
+
+.button2{
+    font-family: "Fredoka", sans-serif;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(187, 84, 255);
+  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  z-index: 6;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform-origin: center;
+  overflow: visible;
+  text-decoration: none;
+  color: white;
+  user-select: none;
+}
+
+.button2:hover{
+  border-radius: 15px;
+  transform: scale(1.1);
+  background-color: rgb(236, 44, 153);
+}
+.button2:active{
+  transform: scale(1.1);
+  background-color: rgb(176, 25, 110);
+
+}
